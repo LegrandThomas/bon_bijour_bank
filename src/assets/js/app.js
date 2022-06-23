@@ -26,6 +26,9 @@ let pourcent=0;
 let total= parseFloat(document.getElementById('solde').innerText);
 let tampon=document.getElementById("symbol").value;
 let elem = document.getElementById("symbol");
+
+
+
       elem.addEventListener("click", e =>{
           symbol=(e.target.value);   
 switch (symbol) {
@@ -322,5 +325,5 @@ console.log(tmpData);
 
 
  
-   
+let personne;
 

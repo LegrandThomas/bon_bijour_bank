@@ -9,7 +9,47 @@ let datapoints = [];
 let y ="";
 let tmpData = JSON.parse(localStorage.getItem("data"));
 let labels = [];
-let dataSet = [
+let dataSet = [];
+
+let dataset1= [
+  {
+    operator: "credit",
+    titre: "Salaire",
+    desc: "mois de septembre",
+    montant: 1650,
+    date : "04-10-2022 13:57",
+  },
+  {
+    operator: "debit",
+    titre: "Boutique Cuir et Moustache",
+    desc: "accessoires divers",
+    montant: 975,
+    date : "11-05-2021 14:46",
+  },
+  {
+    operator: "credit",
+    titre: "Vinteed",
+    desc: "ventes fringues",
+    montant: 49,
+    date : "08-04-2022 15:01",
+  },
+  {
+    operator: "debit",
+    titre: "Choubidou",
+    desc: "Anniversaire Nicolas",
+    montant: 399,
+    date : "11-11-2022 23:57",
+  },
+  {
+    operator: "credit",
+    titre: "Vente cadeaux Noël",
+    desc: "vente cadeau 'pourri' belle mère",
+    montant: 5,
+    date : "25-12-2022 11:57",
+    
+  },];
+
+let dataset2= [
   {
     operator: "credit",
     titre: "Salaire",
@@ -45,10 +85,22 @@ let dataSet = [
     montant: 800,
     date : "28-05-2022 11:57",
     
-  },
-];
-log=(user.name)+" "+(user.firstname);
-document.getElementById("log").innerHTML=log;
+  },];
+console.log(document.cookie);
+  if(document.cookie==2){
+    log=(user2.firstname)+" "+(user2.name);
+    document.getElementById("log").innerHTML=log;
+    dataSet=dataset2;
+   
+  }else{
+    log=(user.firstname)+" "+(user.name);
+    document.getElementById("log").innerHTML=log;
+    dataSet=dataset1;
+  }
+
+
+
+console.log(dataSet);
 console.log(log);
 
 if (title === "index") {
