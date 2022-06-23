@@ -194,6 +194,7 @@ let data2 = {
 
 if(document.cookie==2){
 data=data2;
+document.getElementsByTagName('canvas').className = ".gris";
 }
 
 
