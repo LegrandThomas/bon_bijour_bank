@@ -87,7 +87,7 @@ let dataset1= [
     
   },];
   console.log(document.cookie);
-  if(document.cookie==2){
+  if(document.cookie=="2"){
     log=(user2.firstname)+" "+(user2.name);
     document.getElementById("log").innerHTML=log;
     dataSet=dataset2;
@@ -103,10 +103,13 @@ console.log(dataSet);
 // myData=dataSet;
 console.log(tmpData);
 
-console.log(log);
-if(document.cookie==2){
+console.log(document.cookie);
+if(document.cookie=="2"){
   myData=dataSet;
   // tmpData=dataSet;
+}else{
+
+  myData=tmpData;
 }
 
 if (title === "index") {
