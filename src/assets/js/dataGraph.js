@@ -8,6 +8,7 @@ let solde = 0;
 let datapoints = [];
 let y ="";
 let tmpData = JSON.parse(localStorage.getItem("data"));
+let labels = [];
 let dataSet = [
   {
     operator: "credit",
@@ -56,12 +57,12 @@ if (title === "index") {
     if (obj["operator"] === "credit") {
       solde = solde + parseInt(obj["montant"]);
       datapoints.push(solde);
-      //  labels.push(obj["titre"]);
+       labels.push(obj["titre"]);
     }
     if (obj["operator"] === "debit") {
       solde = solde - parseInt(obj["montant"]);
       datapoints.push(solde);
-      // labels.push(obj["titre"])
+       labels.push(obj["titre"])
     }
 
   });
@@ -71,7 +72,7 @@ if (title === "index") {
     if (obj["operator"] === "credit") {
       solde = solde + parseInt(obj["montant"]);
       datapoints.push(solde);
-      // labels.push(obj["titre"])
+       labels.push(obj["titre"])
     }
   });
 
@@ -80,7 +81,7 @@ if (title === "index") {
     if (obj["operator"] === "debit") {
       solde = solde + parseInt(obj["montant"]);
       datapoints.push(solde);
-      // labels.push(obj["titre"])
+       labels.push(obj["titre"])
     }
   });
 
@@ -94,7 +95,7 @@ if (title === "index") {
 
 const DATA_COUNT = datapoints.length + 5;
 
-let labels = [];
+
 
 let data = {
 
@@ -115,23 +116,18 @@ let data = {
 
 };
 
-for (let i = 0; i < DATA_COUNT; ++i) {
+// for (let i = 0; i < DATA_COUNT; ++i) {
 
- if (i<5){
-  console.log(dataSet[i].titre)
-  labels.push(dataSet[i].titre);
- }else if(i==5){
-  y=tmpData[5].titre;
-  console.log(y);
-   labels.push(y);
-   console.log(y);
- }
-}
-
-  
- 
-
- 
+//  if (i<5){
+//   console.log(dataSet[i].titre)
+//   labels.push(dataSet[i].titre);
+//  }else if(i==5){
+//   y=tmpData[5].titre;
+//   console.log(y);
+//    labels.push(y);
+//    console.log(y);
+//  }
+// }
 // let x=document.getElementById("body");
 
 // if(x!==null){
