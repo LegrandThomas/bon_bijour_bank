@@ -105,8 +105,8 @@ console.log(tmpData);
 
 console.log(log);
 if(document.cookie==2){
-  myData=dataSet;
-  tmpData=dataSet;
+  myData=tmpData;
+  // tmpData=dataSet;
 }
 
 if (title === "index") {

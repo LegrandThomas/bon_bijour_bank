@@ -58,7 +58,7 @@ switch (symbol) {
     break;
 }
  total=Math.round(total * 100) / 100;
-          if(title==="credit"){
+          if(title==="debit"){
           document.getElementById("solde").innerHTML ="-"+ total+symbol;
         }else{
           document.getElementById("solde").innerHTML = total+symbol;
