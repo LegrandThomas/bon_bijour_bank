@@ -101,17 +101,18 @@ let dataset1= [
 
 console.log(dataSet);
 myData=dataSet;
+tmpData=dataSet;
 console.log(tmpData);
 
 console.log(document.cookie);
-if(document.cookie=="2"){
+// if(document.cookie=="2"){
   
-  tmpData=dataSet;
-  console.log("ok");
-}else{
-  console.log(" pas ok");
+//   tmpData=dataSet;
+//   console.log("ok");
+// }else{
+//   console.log(" pas ok");
   
-}
+// }
 
 if (title === "index") {
   myData.forEach((obj) => {
