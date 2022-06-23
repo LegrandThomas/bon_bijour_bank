@@ -11,7 +11,7 @@ let tmpData = JSON.parse(localStorage.getItem("data"));
 let labels = [];
 let dataSet = [];
 
-let dataset1= [
+let dataset2= [
   {
     operator: "credit",
     titre: "Salaire",
@@ -49,7 +49,7 @@ let dataset1= [
     
   },];
 
-let dataset2= [
+let dataset1= [
   {
     operator: "credit",
     titre: "Salaire",
@@ -105,7 +105,7 @@ console.log(tmpData);
 
 console.log(log);
 if(document.cookie==2){
-  myData=tmpData;
+  myData=dataSet;
   // tmpData=dataSet;
 }
 
