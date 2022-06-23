@@ -197,13 +197,7 @@ data=data2;
 document.getElementById('myChart').className = ".gris";
 document.getElementById("myChartCredit").className = ".gris";
 document.getElementById("myChartDebit").className = ".gris";
-}else{
-  document.getElementById('myChart').className = ".orange";
-  document.getElementById("myChartCredit").className = ".orange";
-  document.getElementById("myChartDebit").className = ".orange";
-
 }
-
 
 
 // for (let i = 0; i < DATA_COUNT; ++i) {
