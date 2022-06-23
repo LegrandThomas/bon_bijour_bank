@@ -57,8 +57,13 @@ switch (symbol) {
     }
     break;
 }
- total=Math.round(total * 100) / 100
+ total=Math.round(total * 100) / 100;
+          if(title==="credit"){
+          document.getElementById("solde").innerHTML ="-"+ total+symbol;
+        }else{
           document.getElementById("solde").innerHTML = total+symbol;
+
+        }
       });
     
 
