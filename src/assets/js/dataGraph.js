@@ -194,9 +194,14 @@ let data2 = {
 
 if(document.cookie==2){
 data=data2;
-document.getElementById('myChart').classList.toggle("gris");
-document.getElementById("myChartCredit").classList.toggle("gris");
-document.getElementById("myChartDebit").classList.toggle("gris");
+if(title === "index"){
+  document.getElementById('myChart').classList.toggle("gris");
+}else if (title === "credit"){
+  document.getElementById("myChartCredit").classList.toggle("gris");
+}else if (title === "debit"){
+  document.getElementById("myChartDebit").classList.toggle("gris");
+}
+
 }
 
 
