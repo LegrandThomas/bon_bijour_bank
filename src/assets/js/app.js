@@ -306,17 +306,17 @@ if(pathArray[3]=='index.html' || pathArray[7]=='index.html' ){
     if (solde < (-2000)) {
       document.getElementById("commentaire").innerHTML =
         "ta femme s'est payé un poney 🦄 ou quoi !!";
-    } else if ((solde > (-1000)) && (solde < (-2000))) {
+    } else if ((solde < (-1000)) && (solde > (-2000))) {
       document.getElementById("commentaire").innerHTML = "Et ça brûle du billet 🔥 ";
-    } else if ((solde > (-500) && solde < (-1000))) {
+    } else if ((solde < (-500) && solde > (-1000))) {
       document.getElementById("commentaire").innerHTML =
         "Heu tu flambes là ..🤘🏻 ";
-    } else if ((solde > (-200)) && (solde < (-500))) {
+    } else if ((solde < (-200)) && (solde > (-500))) {
       document.getElementById("commentaire").innerHTML =
         "faut quand même penser à lever un peu le pied";
-    } else if ((solde > (-100)) && (solde < (-200))) {
+    } else if ((solde < (-100)) && (solde > (-200))) {
       document.getElementById("commentaire").innerHTML = "Ca va bien géré";
-    }else if ((solde > (-100))) {
+    }else if ((solde < (-100))) {
       document.getElementById("commentaire").innerHTML = "Cool pas trop dépensé 😎";
       }
   }
