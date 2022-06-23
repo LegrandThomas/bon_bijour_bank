@@ -100,7 +100,7 @@ let dataset2= [
 
 
 console.log(dataSet);
-myData=dataSet;
+// myData=dataSet;
 console.log(tmpData);
 
 console.log(log);
@@ -169,6 +169,30 @@ let data = {
   ],
 
 };
+let data2 = {
+
+  labels: labels,
+
+  datasets: [
+
+    {
+      label: "Compte",
+      data: datapoints,
+      borderColor: "blue",
+      //   fill: true,
+      cubicInterpolationMode: "monotone",
+
+    },
+
+  ],
+
+};
+
+if(document.cookie==2){
+data=data2;
+}
+
+
 
 // for (let i = 0; i < DATA_COUNT; ++i) {
 
@@ -195,11 +219,6 @@ let data = {
 // }
 
 
-
-
-// </block:setup>
-
- 
 
 // <block:config:0>
 
