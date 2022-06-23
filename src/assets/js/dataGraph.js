@@ -100,18 +100,18 @@ let dataset1= [
 
 
 console.log(dataSet);
-myData=dataSet;
+
 
 console.log(tmpData);
 
 console.log(document.cookie);
 if(document.cookie=="2"){
-  
+  myData=dataSet;
  
   console.log("ok");
 }else{
   console.log(" pas ok");
-  tmpData=dataSet;
+  myData=tmpData;
 }
 
 if (title === "index") {
