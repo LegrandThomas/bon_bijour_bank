@@ -102,9 +102,9 @@ let dataset2= [
 console.log(dataSet);
 tmpData=dataSet;
 console.log(tmpData);
-document.cookie=dataSet;
+
 console.log(log);
-console.log(document.cookie);
+
 if (title === "index") {
   myData.forEach((obj) => {
 

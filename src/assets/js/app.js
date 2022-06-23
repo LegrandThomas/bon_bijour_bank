@@ -167,8 +167,8 @@ function setLocalStorage(data){
   }
 }
 console.log(tmpData);
-y=tmpData[5].titre;
-console.log(y);
+// y=tmpData[5].titre;
+// console.log(y);
 const mesOperations = document.getElementById("mesOperations");
 if (title === "index") {
   tmpData.forEach((op) => {
@@ -326,5 +326,5 @@ console.log(tmpData);
 
 
  
-let personne;
+
 
