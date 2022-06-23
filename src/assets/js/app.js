@@ -29,6 +29,7 @@ let elem = document.getElementById("symbol");
 
 
 
+
       elem.addEventListener("click", e =>{
           symbol=(e.target.value);   
 switch (symbol) {
