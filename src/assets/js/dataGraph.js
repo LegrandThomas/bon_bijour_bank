@@ -107,11 +107,11 @@ console.log(tmpData);
 console.log(document.cookie);
 if(document.cookie=="2"){
   
-  tmpData=dataSet;
+ 
   console.log("ok");
 }else{
   console.log(" pas ok");
-  
+  tmpData=dataSet;
 }
 
 if (title === "index") {
