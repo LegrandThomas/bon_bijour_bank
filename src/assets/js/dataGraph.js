@@ -194,9 +194,9 @@ let data2 = {
 
 if(document.cookie==2){
 data=data2;
-document.getElementById('myChart').className = "gris";
-document.getElementById("myChartCredit").className = "gris";
-document.getElementById("myChartDebit").className = "gris";
+document.getElementById('myChart').classList.toggle("gris");
+document.getElementById("myChartCredit").classList.toggle("gris");
+document.getElementById("myChartDebit").classList.toggle("gris");
 }
 
 
