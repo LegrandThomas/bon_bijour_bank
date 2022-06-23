@@ -100,7 +100,7 @@ let dataset2= [
 
 
 console.log(dataSet);
-tmpData=dataSet;
+// tmpData=dataSet;
 console.log(tmpData);
 
 console.log(log);
