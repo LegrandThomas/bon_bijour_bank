@@ -194,7 +194,14 @@ let data2 = {
 
 if(document.cookie==2){
 data=data2;
-document.getElementsByTagName('canvas').className = ".gris";
+document.getElementById('myChart').className = ".gris";
+document.getElementById("myChartCredit").className = ".gris";
+document.getElementById("myChartDebit").className = ".gris";
+}else{
+  document.getElementById('myChart').className = ".orange";
+  document.getElementById("myChartCredit").className = ".orange";
+  document.getElementById("myChartDebit").className = ".orange";
+
 }
 
 

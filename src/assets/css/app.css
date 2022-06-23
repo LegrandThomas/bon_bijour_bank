@@ -102,7 +102,7 @@ header {
   cursor: pointer;
   transform: scale(1.1);
 }
- canvas{
+.orange{
 
   background-color: rgb(219, 136, 42);
  }
