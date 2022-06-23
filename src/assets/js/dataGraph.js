@@ -1,4 +1,7 @@
 // Ficher graphe
+
+
+let log=document.getElementById("log").innerHTML;
 const title = document.title;
 let myData = JSON.parse(localStorage.getItem("data"));
 let solde = 0;
@@ -43,7 +46,9 @@ let dataSet = [
     
   },
 ];
-
+log=(user.name)+" "+(user.firstname);
+document.getElementById("log").innerHTML=log;
+console.log(log);
 
 if (title === "index") {
   myData.forEach((obj) => {

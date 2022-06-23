@@ -14,36 +14,50 @@ $(document).ready(function () {
 // console.log(nom);
 
 
-let tauxlivre=0.86211785;
+let tauxlivre= 0.86211785;
 let tauxdollar=1.0515722;
 let symbol="€";
+let euro=solde;
+let dollard= solde * tauxdollar;
+let livre=solde*tauxlivre;
+
 let arrondi=0.00;
 let pourcent=0;
 let total= parseFloat(document.getElementById('solde').innerText);
- 
-function myFunction() {
-  let elem = document.getElementById("symbol");
-
-  
+let tampon=document.getElementById("symbol").value;
+let elem = document.getElementById("symbol");
       elem.addEventListener("click", e =>{
-          symbol=(e.target.value);
-          console.log(symbol);
+          symbol=(e.target.value);   
+switch (symbol) {
 
-          if(symbol=="€"){
-              solde=solde;
-            
-          }else if(symbol=="$"){
-          solde=solde*tauxdollar;
-        }else if (symbol=="£"){
-          solde=solde*tauxdollar;
+  case "$":
+    if(tampon="€"){
+        total=dollard;   
+    }else{
 
-        }
-          document.getElementById("solde").innerHTML = solde+symbol;
-      });
- 
+      total=euro;
+    }
+    break;
+    case "€":
+      if(tampon="$"){
+        total=euro;  
+    }else{
+      total=euro;
+    }
+    break;
+    case "£":
+      if(tampon="€"){
+        total=livre;
+    }else{
+      total=dollard;
+    }
+    break;
 }
+ total=Math.round(total * 100) / 100
+          document.getElementById("solde").innerHTML = total+symbol;
+      });
+    
 
-myFunction();
 
 // alert(document.cookie);
 // console.log(dataSet.push({
@@ -139,7 +153,6 @@ function initLocalStorage() {
   }
 }
 initLocalStorage();
-
 function setLocalStorage(data){
   if (localStorage.getItem("data") !== null) {
      localStorage.clear();
@@ -149,18 +162,14 @@ function setLocalStorage(data){
     initLocalStorage();
   }
 }
-
 console.log(tmpData);
 y=tmpData[5].titre;
 console.log(y);
 const mesOperations = document.getElementById("mesOperations");
-
 if (title === "index") {
   tmpData.forEach((op) => {
     let operation = operationRetour(op);
     mesOperations.insertAdjacentHTML("beforeend", operation);
-   
-   
   });
 } else if (title === "credit") {
   
@@ -177,7 +186,6 @@ if (title === "index") {
     if (op["operator"] === "debit") {
       let operation = operationRetour(op);
       mesOperations.insertAdjacentHTML("beforeend", operation);
-     
     }
   });
 }
@@ -198,10 +206,7 @@ console.log(date);
     desc: form.desc.value,
     montant: form.montant.value,
     date: date+" "+hours,
-   
-   
   };
-  
 }
 
 buttonSubmit.addEventListener("click", (event) => {
@@ -211,14 +216,15 @@ buttonSubmit.addEventListener("click", (event) => {
   setLocalStorage(dataSet);
   console.log(dataSet);
   event.preventDefault();
-  
 });
+
 console.log(solde);
  solde = 0;
  total=0;
 if(title === "index"){
 tmpData.forEach((op) => {
-  
+
+
   if (op["operator"] === "credit") {
     solde = ((solde) + (parseFloat(op["montant"])));
     total =  (parseFloat(total)+(solde));

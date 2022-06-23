@@ -14,12 +14,16 @@
 </head>
 
 <body>
-  <label for="symbol">Choisi le change </label>
-  <select name="symbol" id="symbol">
-      <option value="€">€</option>
-      <option value="$">$</option>
-      <option value="£">£</option>
-  </select>
+  <div style="text-align:center ;">Bonjour : <span id="log"></span>
+    <label for="symbol"><i>Affiche ton solde en  :</i> </label>
+
+    <select name="symbol" id="symbol" style="width:10% ;" >
+        <option value="€">€</option>
+        <option value="$">$</option>
+        <option value="£">£</option>
+    </select>
+  </div>
+ 
   <div class="small reveal" id="exampleModal1" data-reveal>
     <h2>Ajouter une opération</h2>
     <form action="#" id="operationForm">
@@ -83,6 +87,7 @@
   </div>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="./assets/js/user.js"></script>
 <script src="./assets/js/dataGraph.js"></script>
 <script src="./assets/js/app.js"></script>
 
