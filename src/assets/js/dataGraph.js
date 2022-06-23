@@ -104,6 +104,10 @@ console.log(dataSet);
 console.log(tmpData);
 
 console.log(log);
+if(document.cookie==2){
+  myData=dataSet;
+  tmpData=dataSet;
+}
 
 if (title === "index") {
   myData.forEach((obj) => {

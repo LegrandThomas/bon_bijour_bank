@@ -289,7 +289,7 @@ if(pathArray[3]=='index.html' || pathArray[7]=='index.html' ){
       document.getElementById("commentaire").innerHTML =
         "T'as palpé man ! ✨";
     } else if (solde > 1000 && solde < 2000) {
-      document.getElementById("commentaire").innerHTML = "c'est 'maman' qui va e^tre contente 😎";
+      document.getElementById("commentaire").innerHTML = "c'est 'maman' qui va être contente 😎";
     } else if (solde > 500 && solde < 1000) {
       document.getElementById("commentaire").innerHTML =
         "Pas gagné grand chose...... ";
@@ -307,7 +307,7 @@ if(pathArray[3]=='index.html' || pathArray[7]=='index.html' ){
       document.getElementById("commentaire").innerHTML =
         "ta femme s'est payé un poney 🦄 ou quoi !!";
     } else if ((solde > (-1000)) && (solde < (-2000))) {
-      document.getElementById("commentaire").innerHTML = "Et ça brûle di billet 🔥 ";
+      document.getElementById("commentaire").innerHTML = "Et ça brûle du billet 🔥 ";
     } else if ((solde > (-500) && solde < (-1000))) {
       document.getElementById("commentaire").innerHTML =
         "Heu tu flambes là ..🤘🏻 ";
