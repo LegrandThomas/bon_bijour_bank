@@ -106,9 +106,10 @@ console.log(tmpData);
 console.log(document.cookie);
 if(document.cookie=="2"){
   myData=dataSet;
-  // tmpData=dataSet;
+  tmpData=dataSet;
+  console.log("ok");
 }else{
-
+  console.log(" pas ok");
   myData=tmpData;
 }
 
