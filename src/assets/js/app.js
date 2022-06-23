@@ -269,16 +269,16 @@ console.log(pathArray);
 if(pathArray[3]=='index.html' || pathArray[7]=='index.html' ){
   if (solde > 2000) {
     document.getElementById("commentaire").innerHTML =
-      "T'es riche mec ✨, petit pactole";
+      "T'es riche mec ✨, beau pactole!!";
   } else if (solde > 1000 && solde < 2000) {
     document.getElementById("commentaire").innerHTML = "ça va, ça va 😎";
   } else if (solde > 500 && solde < 1000) {
     document.getElementById("commentaire").innerHTML =
       "Heu y'a plus grand chose, c'est la dèche ";
-  } else if (solde > 50 && solde < 100) {
+  } else if (solde > 50 && solde < 500) {
     document.getElementById("commentaire").innerHTML =
       "aie aie aie, tu vas manger des pâtes";
-  } else if (solde == 0) {
+  } else if (solde < 50) {
     document.getElementById("commentaire").innerHTML = "faut remettre du pognon";
   }else if (solde<0){
     document.getElementById("commentaire").innerHTML = "c'est la merde ALERTE, ALERTE";
@@ -293,10 +293,10 @@ if(pathArray[3]=='index.html' || pathArray[7]=='index.html' ){
     } else if (solde > 500 && solde < 1000) {
       document.getElementById("commentaire").innerHTML =
         "Pas gagné grand chose...... ";
-    } else if (solde > 50 && solde < 100) {
+    } else if (solde > 50 && solde < 500) {
       document.getElementById("commentaire").innerHTML =
         "feignant";
-    } else if (solde == 0) {
+    } else if (solde < 50) {
       document.getElementById("commentaire").innerHTML = "Mais go Pôle emploi direct";
     }else if (solde<0){
       document.getElementById("commentaire").innerHTML = "ok j'espére que t'as bien fait travaillé ta femme...";
@@ -311,12 +311,12 @@ if(pathArray[3]=='index.html' || pathArray[7]=='index.html' ){
     } else if ((solde > (-500) && solde < (-1000))) {
       document.getElementById("commentaire").innerHTML =
         "Heu tu flambes là ..🤘🏻 ";
-    } else if ((solde > (-50)) && (solde < (-100))) {
+    } else if ((solde > (-200)) && (solde < (-500))) {
       document.getElementById("commentaire").innerHTML =
         "faut quand même penser à lever un peu le pied";
-    } else if (solde == 0) {
+    } else if ((solde > (-100)) && (solde < (-200))) {
       document.getElementById("commentaire").innerHTML = "Ca va bien géré";
-    }else if (solde>0){
+    }else if ((solde > (-100))) {
       document.getElementById("commentaire").innerHTML = "Cool pas trop dépensé 😎";
       }
   }
