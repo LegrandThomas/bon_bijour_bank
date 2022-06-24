@@ -100,17 +100,13 @@ let dataset1= [
     log=(user.firstname)+" "+(user.name);
     document.getElementById("log").innerHTML=log;
     dataSet=dataset1;
-    
-    myData=tmpData;
+    myData=dataSet;
+    tmpData=myData;
   }
 
-
 console.log(dataSet);
-
-
 console.log(tmpData);
 
-console.log(document.cookie);
 
 
 if (title === "index") {
