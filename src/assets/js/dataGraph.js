@@ -86,7 +86,7 @@ let dataset1= [
     date : "28-05-2022 11:57",
     
   },];
-  
+
   console.log(document.cookie);
   console.log(dataSet);
   console.log(tmpData);
@@ -95,17 +95,17 @@ let dataset1= [
     log=(user2.firstname)+" "+(user2.name);
     document.getElementById("log").innerHTML=log;
     dataSet=dataset2;
-   
+    myData=tmpData;
   }else{
     log=(user.firstname)+" "+(user.name);
     document.getElementById("log").innerHTML=log;
     dataSet=dataset1;
-    myData=tmpData;
+    myData=dataSet;
   }
 
 
 console.log(dataSet);
-myData=dataSet;
+
 
 console.log(tmpData);
 
