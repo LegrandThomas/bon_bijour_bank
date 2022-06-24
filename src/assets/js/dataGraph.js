@@ -86,7 +86,11 @@ let dataset1= [
     date : "28-05-2022 11:57",
     
   },];
+  
   console.log(document.cookie);
+  console.log(dataSet);
+  console.log(tmpData);
+
   if(document.cookie=="2"){
     log=(user2.firstname)+" "+(user2.name);
     document.getElementById("log").innerHTML=log;
@@ -96,23 +100,17 @@ let dataset1= [
     log=(user.firstname)+" "+(user.name);
     document.getElementById("log").innerHTML=log;
     dataSet=dataset1;
+    myData=tmpData;
   }
 
 
 console.log(dataSet);
-
+myData=dataSet;
 
 console.log(tmpData);
 
 console.log(document.cookie);
-if(document.cookie=="2"){
-  myData=dataSet;
- 
-  console.log("ok");
-}else{
-  console.log(" pas ok");
-  myData=tmpData;
-}
+
 
 if (title === "index") {
   myData.forEach((obj) => {
