@@ -95,15 +95,15 @@ let dataset1= [
     log=(user2.firstname)+" "+(user2.name);
     document.getElementById("log").innerHTML=log;
     dataSet=dataset2;
-    myData=dataSet;
+
   }else{
     log=(user.firstname)+" "+(user.name);
     document.getElementById("log").innerHTML=log;
     dataSet=dataset1;
-    myData=dataSet;
-    tmpData=myData;
+    
+   
   }
-
+myData=tmpData;
 console.log(dataSet);
 console.log(tmpData);
 
