@@ -94,16 +94,21 @@ let dataset1= [
   if(document.cookie=="2"){
     log=(user2.firstname)+" "+(user2.name);
     document.getElementById("log").innerHTML=log;
+    console.log(dataSet);
+    console.log(tmpData);
     dataSet=dataset2;
+    myData=tmpData;
 
   }else{
     log=(user.firstname)+" "+(user.name);
     document.getElementById("log").innerHTML=log;
+    console.log(dataSet);
+  console.log(tmpData);
     dataSet=dataset1;
-    
+    myData=tmpData;
    
   }
-myData=tmpData;
+
 console.log(dataSet);
 console.log(tmpData);
 
